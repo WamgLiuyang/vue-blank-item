@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+	/* font-family: -apple-system, PingFangSC, "Microsoft YaHei", BlinkMacSystemFont, sans-serif, "SegoeUI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "FiraSans", "DroidSans", "HelveticaNeue"; */
+
+ul,
+ol {
+	list-style: none;
+}
+
+a,
+s,
+del,
+u,
+i,
+em,
+strong,
+b {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b {
+	font-style: normal;
+	font-weight: inherit;
+}
+
+input,
+select,
+textarea,
+button,
+a {
+	outline: none;
+	text-decoration: none
+}
+
+input,
+select,
+textarea,
+button,
+a:hover {
+	text-decoration: none;
+}
+
+*:hover {
+	text-decoration: none;
+}
+
+textarea {
+	resize: none;
+}
+
+img {
+	display: block;
+	border: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
