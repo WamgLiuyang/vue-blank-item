@@ -16,6 +16,8 @@ export default {
 		HelloWorld,HomeHeader
 	},
 	mounted(){
+		// jQ 引入成功
+		console.log($('img').attr('src'));
 	}
 };
 </script>
