@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router.js';
 import axios from 'axios';
+import '@/assets/css/css-Righteous.css';
 import '@/assets/css/commom.css';
 
 Vue.config.productionTip = false;

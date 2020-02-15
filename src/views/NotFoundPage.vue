@@ -59,6 +59,5 @@ export default {
 </script>
 
 <style scoped>
-@import url('../assets/css/css-Righteous.css');
 @import url('../assets/css/NotFoundPage.css');
 </style>

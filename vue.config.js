@@ -17,7 +17,7 @@ module.exports = {
 			}
 		}
 	},
-	configureWebpack: {	//配置jquery
+	configureWebpack: { //配置jquery
 		entry: {
 			app: './src/main.js',
 		},
@@ -29,5 +29,4 @@ module.exports = {
 			})
 		]
 	}
-
 };
