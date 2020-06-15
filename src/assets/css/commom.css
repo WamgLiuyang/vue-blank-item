@@ -1,9 +1,19 @@
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+	outline: none;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
-	/* font-family: -apple-system, PingFangSC, "Microsoft YaHei", BlinkMacSystemFont, sans-serif, "SegoeUI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "FiraSans", "DroidSans", "HelveticaNeue"; */
+
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+/* font-family: -apple-system, PingFangSC, "Microsoft YaHei", BlinkMacSystemFont, sans-serif, "SegoeUI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "FiraSans", "DroidSans", "HelveticaNeue"; */
 
 ul,
 ol {
@@ -74,4 +84,13 @@ img {
 	display: block;
 	visibility: hidden;
 	clear: both;
+}
+
+.text-justify:after {
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	content: '';
+	vertical-align: top;
 }
