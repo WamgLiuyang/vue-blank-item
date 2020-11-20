@@ -1,17 +1,25 @@
 <template>
-  <router-view id="app"></router-view>
+	<router-view id="app"></router-view>
 </template>
 
 <script>
-export default {
-  name: 'App',
-}
+	export default {
+		name: 'App',
+		watch: {
+			$route(to, from) {
+				document.title = to.meta.title;
+				// console.log(); //到哪去
+			}
+		},
+		mounted() {}
+	}
 </script>
 
-<style lang="scss" scopedc>
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+<style scoped>
+	#app {
+		/* position: fixed;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll; */
+	}
 </style>

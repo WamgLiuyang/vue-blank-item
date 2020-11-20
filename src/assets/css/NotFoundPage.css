@@ -112,16 +112,18 @@
 	left: 100px;
 	top: 400px;
 	transform: translateY(-60%);
-	font-family: 'Righteous', cursive;
-	color: #363e49;
+	font-family: 'Righteous', cursive !important;
+	color: #ddd;
 }
 
 .error__title {
 	font-size: 10em;
+	font-family: 'Righteous', cursive !important;
 }
 
 .error__subtitle {
 	font-size: 2em;
+	font-family: 'Righteous', cursive !important;
 }
 
 .error__description {
@@ -139,7 +141,7 @@
 	border-radius: 8em;
 	color: #576375;
 	cursor: pointer;
-	transition-duration: 0.2s;
+	/* transition-duration: 0.2s; */
 	font-size: 0.75em;
 	/* font-family: 'Righteous', cursive; */
 }

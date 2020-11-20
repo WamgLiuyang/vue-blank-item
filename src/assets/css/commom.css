@@ -5,8 +5,8 @@
 	user-select: none;
 	outline: none;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	-webkit-font-smoothing: antialiased;
 }
-
 
 
 ::-webkit-scrollbar {
@@ -43,11 +43,37 @@ b {
 	font-weight: inherit;
 }
 
+input, textarea{
+	-webkit-user-select:text !important;
+	line-height:normal !important;
+}
+
+input{
+	vertical-align: middle;
+}
+
+input::-ms-clear{
+	display: none;
+}
+
+input::-webkit-search-cancel-button{
+  display: none;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+	-webkit-appearance: none;	/* 清除输入框的叉号 */
+}
+
+input::-ms-reveal{
+	display:none;
+}
+
 input,
 select,
 textarea,
 button,
 a {
+	border: none;
 	outline: none;
 	text-decoration: none
 }
@@ -86,11 +112,24 @@ img {
 	clear: both;
 }
 
-.text-justify:after {
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	height: 0;
-	content: '';
-	vertical-align: top;
+textarea::-webkit-input-placeholder,input::-webkit-input-placeholder{
+	color: #999 ;
+	font-weight: normal;
+	display: block;
+	line-height: normal;
+	height: auto;
+	transform: translateY(1px);
+}
+
+textarea::-moz-placeholder,input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+	color: #999 ;
+	font-weight: normal;
+}
+textarea:-moz-placeholder,input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+	color: #999 ;
+	font-weight: normal;
+}
+textarea:-ms-input-placeholder,input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+	color: #999 ;
+	font-weight: normal;
 }
